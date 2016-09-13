@@ -1,0 +1,62 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    app:cardsUseCompatPadding = "true"
+    cardview:cardCornerRadius="2dp"
+    cardview:cardUseCompatPadding="true"
+    cardview:contentPaddingLeft="@dimen/activity_horizontal_margin"
+    cardview:contentPaddingRight="@dimen/activity_horizontal_margin"
+    cardview:contentPaddingTop="@dimen/activity_vertical_margin"
+    cardview:contentPaddingBottom="@dimen/activity_vertical_margin"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:text="dafdafda"
+            android:textColor="#222"
+            android:textSize="15dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:id="@+id/price"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brand"
+        android:id="@+id/brand"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:padding="8dp"></TextView>
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>
